@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://spot-onk9training.com/sitemap.xml

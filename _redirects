@@ -1,0 +1,21 @@
+# Netlify redirect map — old Squarespace paths to the new pages.
+# On Vercel/Cloudflare use the equivalent config; on Apache use .htaccess.
+/home                        /                    301
+/training                    /nyc.html            301
+/new-york-training-copy-1    /connecticut.html    301
+/new-york-training-copy      /nyc.html            301
+/about                       /about.html          301
+/contact                     /contact.html        301
+/policies                    /policies.html       301
+/testimonials                /testimonials.html   301
+/videos                      /videos.html         301
+/application                 /contact.html#register 301
+/gift-cert                   /contact.html#gift   301
+/products-test               /nyc.html            301
+/pay-for-services            /nyc.html            301
+/survey                      /                    301
+/other                       /                    301
+/client-surveygroup-class    /                    301
+/faq                         /policies.html       301
+/gallery                     /videos.html         301
+/home-2                      /                    301
