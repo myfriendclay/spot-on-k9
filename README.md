@@ -4,6 +4,9 @@ A rebuild of [spot-onk9training.com](https://spot-onk9training.com) as a fast, s
 static site. No framework, no build step, no dependencies — eight HTML files, one stylesheet,
 one script.
 
+**Live preview: <https://myfriendclay.github.io/spot-on-k9/>**
+(GitHub Pages, deployed from `main`. Pushing to `main` redeploys within a minute or two.)
+
 ```
 index.html          Home
 nyc.html            NYC packages & pricing
@@ -37,7 +40,8 @@ works from the filesystem.
 
 ## Deploying
 
-The site is plain static files. Any of these work:
+The site is plain static files. It's currently on **GitHub Pages** — `git push` to `main` and
+it redeploys. Any of these also work:
 
 - **Netlify** — drag the folder onto <https://app.netlify.com/drop>. `_redirects` is picked up automatically.
 - **Vercel** — `vercel deploy` from this directory.
@@ -106,7 +110,9 @@ collapses automatically.
 
 **Videos** are `<article class="video-card" data-cat="…">` in `videos.html`. To add one:
 
-1. Save a 16:9 thumbnail as `assets/thumbs/<youtube-id>.webp`.
+1. Save a 16:9 thumbnail as `assets/thumbs/yt-<youtube-id>.webp`. The `yt-` prefix matters:
+   YouTube IDs can start with `_` or `-`, and GitHub Pages refuses to serve paths beginning
+   with an underscore.
 2. Copy an existing card, change `data-video`, `data-title`, the `<img src>` and the heading.
 3. Set `data-cat` to one of `reactivity`, `recall`, `group`, `obedience`, `testimonial`.
 4. Bump the count in that category's filter chip.
